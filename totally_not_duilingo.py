@@ -3,25 +3,30 @@ from fuzzywuzzy import fuzz
 
 def main():
     translations = {
-        "hello": ["konnichiwa", "yaho", "osu", "yo"],
-        "cat": ["neko"],
-        "power": ["chikara", "pawa"],
-        "family": ["kazoku"],
-        "magic": ["maho", "majutsu"],
-        "ice cream": ["aisu kuriimu", "aisu"],
-        "strong": ["tsuyoi", "jobu", "katai"],
-        "water": ["mizu"],
-        "bag": ["kaban", "baggu"],
-        "dad (my dad)": ["chichi", "otosan", "oyaji"],
-        "mom (my mom)": ["haha", "okasan", "okaachan"],
-        "umbrella": ["kasa"],
-        "I": ["watashi", "boku", "ore", "atashi"],
-        "dumb": ["baka", "baaka", "aho"],
-        "please": ["kudasai", "onegai"],
-        "good/nice": ["ii", "yoi", "suteki"],
-        "phone": ["sumaho", "denwa", "keitai"],
-        "bye": ["jaane", "sayonara", "mata ne", "bai bai"]
+        "hello": ["konnichiwa", "やあ", "おす", "よ", "やほう", "こんにちは", "ヤホ", "オス", "ヨ"],
+        # added kana forms for common greetings
+        "cat": ["neko", "ねこ", "ネコ"],
+        "power": ["chikara", "ちから", "チカラ", "pawa", "パワー"],
+        "family": ["kazoku", "かぞく", "カゾク"],
+        "magic": ["maho", "まほう", "マホウ", "majutsu", "まじゅつ", "マジュツ"],
+        "ice cream": ["aisu kuriimu", "アイスクリーム", "aisu", "アイス"],
+        "strong": ["tsuyoi", "つよい", "ツヨイ", "jobu", "ジョブ", "katai", "かたい", "カタイ"],
+        "water": ["mizu", "みず", "ミズ"],
+        "bag": ["kaban", "かばん", "カバン", "baggu", "バッグ"],
+        "dad (my dad)": ["chichi", "ちち", "チチ", "otosan", "おとうさん", "オトウサン", "oyaji", "おやじ", "オヤジ"],
+        "mom (my mom)": ["haha", "はは", "ハハ", "okasan", "おかあさん", "オカアサン", "okaachan", "おかあちゃん",
+                         "オカアチャン"],
+        "umbrella": ["kasa", "かさ", "カサ"],
+        "I": ["watashi", "わたし", "ワタシ", "boku", "ぼく", "ボク", "ore", "おれ", "オレ", "atashi", "あたし",
+              "アタシ"],
+        "dumb": ["baka", "ばか", "バカ", "baaka", "ばあか", "バアカ", "aho", "あほ", "アホ"],
+        "please": ["kudasai", "ください", "クダサイ", "onegai", "おねがい", "オネガイ"],
+        "good/nice": ["ii", "いい", "イイ", "yoi", "よい", "ヨイ", "suteki", "すてき", "ステキ"],
+        "phone": ["sumaho", "すまほ", "スマホ", "denwa", "でんわ", "デンワ", "keitai", "けいたい", "ケイタイ"],
+        "bye": ["jaane", "じゃあね", "ジャアネ", "sayonara", "さよなら", "サヨナラ", "mata ne", "またね", "マタネ",
+                "bai bai", "バイバイ"]
     }
+
     score = 0
     streak = 0
     mistakes = []
