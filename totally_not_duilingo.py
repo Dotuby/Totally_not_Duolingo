@@ -1,4 +1,4 @@
-import random
+ort random
 from fuzzywuzzy import fuzz
 
 def main():
@@ -139,6 +139,13 @@ def main():
     else:
         print('Please enter a valid choice -  either "practice" or "quizz".')
 
+    users_end = input('if you wish to end the code please press "enter", or if you wish to restart, please submit ".".')
+    if users_end == '':
+        print('Goodbye!')
+    if users_end == '.':
+        for i in range(100):
+            print()
+        main()
 
 
 if __name__ == '__main__':
