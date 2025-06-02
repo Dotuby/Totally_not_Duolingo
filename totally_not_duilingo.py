@@ -3,8 +3,8 @@ from fuzzywuzzy import fuzz
 
 def main():
     translations = {
-        "hello": ["konnichiwa", "やあ", "おす", "よ", "やほう", "こんにちは", "ヤホ", "オス", "ヨ"],
-        # added kana forms for common greetings
+        "hello": ["konnichiwa", "やあ", "おす", "osu", "yo", "yaho", "よ", "やほう", "こんにちは", "ヤホ", "オス",
+                  "ヨ"],
         "cat": ["neko", "ねこ", "ネコ"],
         "power": ["chikara", "ちから", "チカラ", "pawa", "パワー"],
         "family": ["kazoku", "かぞく", "カゾク"],
@@ -24,7 +24,21 @@ def main():
         "good/nice": ["ii", "いい", "イイ", "yoi", "よい", "ヨイ", "suteki", "すてき", "ステキ"],
         "phone": ["sumaho", "すまほ", "スマホ", "denwa", "でんわ", "デンワ", "keitai", "けいたい", "ケイタイ"],
         "bye": ["jaane", "じゃあね", "ジャアネ", "sayonara", "さよなら", "サヨナラ", "mata ne", "またね", "マタネ",
-                "bai bai", "バイバイ"]
+                "bai bai", "バイバイ"],
+        "school": ["gakkou", "がっこう", "ガッコウ"],
+        "friend": ["tomodachi", "ともだち", "トモダチ"],
+        "food": ["tabemono", "たべもの", "タベモノ"],
+        "drink": ["nomimono", "のみもの", "ノミモノ"],
+        "yes": ["hai", "はい", "ハイ"],
+        "no": ["iie", "いいえ", "イイエ"],
+        "love": ["ai", "あい", "アイ", "suki", "すき", "スキ"],
+        "teacher": ["sensei", "せんせい", "センセイ"],
+        "student": ["gakusei", "がくせい", "ガクセイ", "seito", "せいと", "セイト"],
+        "book": ["hon", "ほん", "ホン"],
+        "time": ["jikan", "じかん", "ジカン"],
+        "money": ["okane", "おかね", "オカネ"],
+        "computer": ["pasokon", "ぱそこん", "パソコン"],
+        "car": ["kuruma", "くるま", "クルマ"]
     }
 
     score = 0
