@@ -1,4 +1,4 @@
-ort random
+import random
 from fuzzywuzzy import fuzz
 
 def main():
